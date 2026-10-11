@@ -11,7 +11,7 @@ from .services.extractor import ALLOWED_EXTENSIONS, ResumeReadError, extract_tex
 from .services.scorer import analyze
 
 
-@api_view(["GET"])
+@api_view(["GET", "HEAD"])
 def health(request):
     return Response({"status": "ok"})
 
